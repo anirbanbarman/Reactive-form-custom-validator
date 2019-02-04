@@ -1,0 +1,13 @@
+<div class="form_fb" [formGroup]="detailsform_fb">
+  <h2>Details Form(FormBuilder)</h2>
+  <label for="Email">Email</label>
+  <input
+    id="Email"
+    type="text"
+    formControlName="Email"
+    (blur)="validationErrors(detailsform_fb)"
+  />
+  <span class="error" *ngIf="detailsFormErrors.Email ">
+    {{ detailsFormErrors.Email }} </span
+  ><br />
+  
